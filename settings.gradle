@@ -10,6 +10,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            credentials {
+                username = mavenUser
+                password = mavenPassword
+            }
+            url "https://repo.deephearing.com/repository/maven/"
+        }
     }
 }
 rootProject.name = "android-sample"
